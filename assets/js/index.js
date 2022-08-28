@@ -17,7 +17,7 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `http://shivanium-git-crud-app-production.up.railway.app/api/users/${data.id}`,
+        "url" : `https://shivanium-git-crud-app-production.up.railway.app/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -34,7 +34,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://shivanium-git-crud-app-production.up.railway.app/api/users/${id}`,
+            "url" : `https://shivanium-git-crud-app-production.up.railway.app/api/users/${id}`,
             "method" : "DELETE"
         }
 
